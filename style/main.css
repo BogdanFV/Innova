@@ -137,7 +137,7 @@ header a{
   cursor: pointer;
   user-select: none;
 }
-.active:after {
+header .active:after {
   content:'';
   position:absolute;
   bottom:0;
@@ -164,7 +164,7 @@ header a{
 .menu.menu-option{
   font-weight: 600;
 }
-.main-page-banner{
+.banner{
   width: 1440px;
   height: 700px;
   border: none;
@@ -172,7 +172,7 @@ header a{
   border-radius: 40px;
   box-shadow: 0px 0px 10px 5px rgba(87, 110, 124, 0.7);
 }
-.main-page-banner-first-header{
+.banner-first-header{
   padding-top: 160px;
   margin: auto;
 
@@ -184,7 +184,7 @@ header a{
   text-align: center;
   text-transform: uppercase;
 }
-.main-page-banner-second-header{
+.banner-second-header{
   margin: 50px auto 0 auto;
   width: 565px;
 
@@ -198,7 +198,7 @@ header a{
 
   color: #FBFBFB;
 }
-.main-page-banner-buttons{
+.banner-buttons{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -207,7 +207,7 @@ header a{
   margin-left: auto;
   margin-right: auto;
 }
-.main-page-banner-buttons button{
+button{
   width: 450px;
   height: 120px;
 
@@ -224,6 +224,9 @@ header a{
   text-transform: uppercase;
 
   color: #FBFBFB;
+}
+button:hover{
+  cursor: pointer;
 }
 .countries{
   margin-top: 65px;
@@ -294,6 +297,9 @@ header a{
 .card-image-tenth{
   background-image: url(/images/cards/card-10.png);
 }
+.card-image-eleventh{
+  background-image: url(/images/cards/card-11.png);
+}
 .card-main-first{
   height: 564px;
   margin-top: 64px;
@@ -304,9 +310,6 @@ header a{
 .card-main-third{
   height: 464px;
 }
-
-
-
 .card-text{
   width: 760px;
   margin: 55px 44px 0 45px;
@@ -337,7 +340,6 @@ li{
   font-size: 18px;
   line-height: 140%;
 
-  text-transform: capitalize;
 }
 ul.card-text-list li:first-child{
   padding-top: 25px;
@@ -424,7 +426,6 @@ main .tg-icon{
   font-weight: 500;
   font-size: 24px;
   line-height: 140%;
-  text-transform: capitalize;
 }
 .contacts-mail{
   font-style: normal;
@@ -465,7 +466,6 @@ main .tg-icon{
   line-height: 140%;
   /* or 25px */
 
-  text-transform: capitalize;
 }
 .footer-social-icons{
   margin-top: 25px;
@@ -480,7 +480,6 @@ main .tg-icon{
   /* identical to box height, or 20px */
 
   text-align: center;
-  text-transform: capitalize;
 }
 .footer-column-header{
   margin-bottom: 25px;
@@ -534,6 +533,9 @@ main .tg-icon{
 .card-about-page-eighth{
   height: 713px;
 }
+.card-about-page-nineth{
+  height: 864px;
+}
 .card span{
   font-size: 14px;
   line-height: 19,6px;
@@ -571,4 +573,190 @@ main .tg-icon{
 }
 .card-about-page-eighth .list-header{
   padding-top: 25px;
+}
+.about-page-meta-header{
+  text-align: center;
+}
+.documents-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 31px;
+  align-items: center;
+}
+.empty-document-space{
+  width: 67px;
+}
+.about-cover{
+  padding-bottom: 51px;
+}
+.projects-banner{
+  background: url(/images/banner-2.png);
+}
+.info-grid{
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 65px;
+}
+.info-block{
+  height: 600px;
+  width: 700px;
+  padding: 28px 58px 33px 58px;
+  background: #F0F0F0;
+  border-radius: 40px;
+  color: #2B353B;
+}
+.info-block-flexbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.info-block-header{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.info-image{
+  margin-top: auto;
+  margin-bottom: 0;
+  border-radius: 20px;
+}
+.info-image-1{
+  height: 224px;
+  background: url(/images/small-pics/small-pic-1.png);
+}
+.info-image-2{
+  height: 227px;
+  background: url(/images/small-pics/small-pic-2.png);
+}
+.info-image-3{
+  height: 236px;
+  background: url(/images/small-pics/small-pic-3.png);
+}
+.info-image-4{
+  height: 235px;
+  background: url(/images/small-pics/small-pic-4.png);
+}
+.info-image-5{
+  height: 273px;
+  background: url(/images/small-pics/small-pic-5.png);
+}
+.info-image-6{
+  height: 184px;
+  background: url(/images/small-pics/small-pic-6.png);
+}
+.info-image-7{
+  height: 236px;
+  background: url(/images/small-pics/small-pic-7.png);
+}
+.info-image-8{
+  height: 184px;
+  background: url(/images/small-pics/small-pic-8.png);
+}
+.info-image-9{
+  height: 272px;
+  background: url(/images/small-pics/small-pic-9.png);
+}
+.info-image-10{
+  height: 185px;
+  background: url(/images/small-pics/small-pic-10.png);
+}
+.info-image-11{
+  height: 244px;
+  background: url(/images/small-pics/small-pic-11.png);
+}
+.info-image-12{
+  height: 244px;
+  background: url(/images/small-pics/small-pic-12.png);
+}
+.info-image-13{
+  height: 289px;
+  background: url(/images/small-pics/small-pic-13.png);
+}
+.info-image-14{
+  height: 168px;
+  background: url(/images/small-pics/small-pic-14.png);
+}
+.info-image-15{
+  height: 239px;
+  background: url(/images/small-pics/small-pic-15.png);
+}
+.partners-template{
+  height: 779px; 
+  background: #FEFEFE;
+  border-radius: 40px;
+}
+.partners-block{
+  display: grid;
+  grid-template-columns: 202px 202px 202px 202px 202px ;
+  grid-gap: 50px;
+ 
+  padding-left: 115px;
+}
+.partners-template:first-child{
+  margin-bottom: 65px;
+}
+.partners-block-header{
+  padding-top: 55px;
+  padding-left: 45px;
+  padding-bottom: 60px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #2B353B;
+}
+.investors-element{
+  width: 202px;
+  height: 141px;
+}
+.investors-element-1{
+  background: url(/images/investors/image_1.png);
+}
+.investors-element-2{
+  background: url(/images/investors/image_2.png);
+}
+.investors-element-3{
+  background: url(/images/investors/image_3.png);
+}
+.investors-element-4{
+  background: url(/images/investors/image_4.png);
+}
+.investors-element-5{
+  background: url(/images/investors/image_5.png);
+}
+.investors-element-6{
+  background: url(/images/investors/image_6.png);
+}
+.investors-element-7{
+  background: url(/images/investors/image_7.png);
+}
+.investors-element-8{
+  background: url(/images/investors/image_8.png);
+}
+.investors-element-9{
+  background: url(/images/investors/image_9.png);
+}
+.investors-element-10{
+  background: url(/images/investors/image_10.png);
+}
+.investors-element-11{
+  background: url(/images/investors/image_11.png);
+}
+.investors-element-12{
+  background: url(/images/investors/image_12.png);
+}
+.investors-element-13{
+  background: url(/images/investors/image_13.png);
+}
+.investors-element-14{
+  background: url(/images/investors/image_14.png);
 }
