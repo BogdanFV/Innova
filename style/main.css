@@ -87,6 +87,7 @@ body{
   border-bottom-right-radius: 80px;
   box-shadow: 1px 1px 5px #000000;
 }
+
 .header-cover{
   display: flex;
   flex-direction: row;
@@ -264,13 +265,34 @@ header a{
   border-radius: 40px 0px 0px 40px;
 }
 .card-image-first{
-  background-image: url(/images/card-1.png);
+  background-image: url(/images/cards/card-1.png);
 }
 .card-image-second{
-  background-image: url(/images/card-2.png);
+  background-image: url(/images/cards/card-2.png);
 }
 .card-image-third{
-  background-image: url(/images/card-3.png);
+  background-image: url(/images/cards/card-3.png);
+}
+.card-image-fourth{
+  background-image: url(/images/cards/card-4.png);
+}
+.card-image-fifth{
+  background-image: url(/images/cards/card-5.png);
+}
+.card-image-sixth{
+  background-image: url(/images/cards/card-6.png);
+}
+.card-image-seventh{
+  background-image: url(/images/cards/card-7.png);
+}
+.card-image-eighth{
+  background-image: url(/images/cards/card-8.png);
+}
+.card-image-nineth{
+  background-image: url(/images/cards/card-9.png);
+}
+.card-image-tenth{
+  background-image: url(/images/cards/card-10.png);
 }
 .card-main-first{
   height: 564px;
@@ -282,6 +304,8 @@ header a{
 .card-main-third{
   height: 464px;
 }
+
+
 
 .card-text{
   width: 760px;
@@ -299,9 +323,8 @@ header a{
   padding-top:25px;
   font-size: 18px;
   line-height: 140%;
-  text-transform: capitalize;
 }
-.card-text-standart b{
+.card-text-standart span{
   font-weight: 700;
 }
 .list-header{
@@ -313,7 +336,6 @@ ul.card-text-list li{
 li{
   font-size: 18px;
   line-height: 140%;
-  /* or 25px */
 
   text-transform: capitalize;
 }
@@ -481,4 +503,72 @@ main .tg-icon{
 }
 .footer-fourth-column{
   margin-left: 130px;
+}
+.about-page-header{
+  margin: 26px 0 44px 20px;
+}
+.card-about-page-first{
+  height: 639px;
+}
+.card-about-page-second{
+  height: 639px;
+}
+.card-about-page-third{
+  height: 1300px;
+}
+.card-about-page-fourth{
+  height: 1179px;
+}
+.card-about-page-fifth{
+  height: 961px;
+}
+.card-about-page-fifth ul li{
+  text-transform: none ;
+}
+.card-about-page-sixth{
+  height: 654px;
+}
+.card-about-page-seventh{
+  height: 781px;
+}
+.card-about-page-eighth{
+  height: 713px;
+}
+.card span{
+  font-size: 14px;
+  line-height: 19,6px;
+}
+.space{
+  margin-left: 21px;
+}
+.regular-text li{
+  text-transform: none;
+}
+.images-in-text{
+  margin-top: 56px;
+}
+.card-about-page-fifth ul li:first-child {
+  padding-top: 0px;
+}
+.card .additional-list-item{
+  font-size: 18px;
+}
+.card .additional-list-item::before{
+  content: "·";
+  margin: 0 10px 0 10px;
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 20px;
+}
+.card-about-page-sixth .images-in-text{
+  margin-top: 25px;
+}
+.card-about-page-seventh .images-in-text{
+  margin-top: 27px;
+}
+.card-about-page-eighth .card-text-standart{
+  padding-top: 0;
+}
+.card-about-page-eighth .list-header{
+  padding-top: 25px;
 }
