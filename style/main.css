@@ -119,11 +119,52 @@ header a{
   display: inline-block;
   list-style-type: none;
 }
+.expandable-about{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
 
+  top: 56px;
+  left: -34px;
+  width: 165px;
+  height: 99.4px;
+  padding-top: 16px;
+  padding-bottom: 21px;
+  background: #2B353B;
+  box-shadow: 1px 1px 5px #000000;
+  border-radius: 10px;
+}
+.menu-about:hover .expandable-about{
+  display: flex;
+}
+.expandable-about .menu-option{
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+
+  color: #FBFBFB;
+}
+.expandable-divider{
+  width: 90px;
+  height: 0px;
+  border: 1px solid #FFA72A;
+  background-color:#FFA72A;
+}
 .page-language .menu-option{
   position: relative;
   padding-bottom: 40px;
   width: 41px;
+}
+.menu-option:hover{
+  text-shadow: 0px 0px 10px rgba(255, 167, 42, 0.9);
+}
+.menu-option-expandable:hover{
+  color: #FFA72A;
 }
 .menu{
   position: relative;
@@ -146,6 +187,61 @@ header .active:after {
   background:#FFA72A;
   height:6px;
   border-radius:10px;
+}
+header .active-activities:after {
+  content: '';
+  position: absolute;
+  width: 50px ;
+  height: 6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFA72A;
+  border-radius: 10px;
+}
+header .active-about:after {
+  content: '';
+  position: absolute;
+  width: 50px ;
+  height: 6px;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  background: #FFA72A;
+  border-radius: 10px;
+}
+header .projects-petrochemical:after {
+  content: '';
+  position: absolute;
+  width: 32px ;
+  height: 6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFA72A;
+  border-radius: 10px;
+}
+header .projects-mining:after {
+  content: '';
+  position: absolute;
+  width: 32px ;
+  height: 6px;
+  bottom: 0;
+  left: 32px;
+  right: 0;
+  background: #FFA72A;
+  border-radius: 10px;
+}
+header .projects-gas:after {
+  content: '';
+  position: absolute;
+  width: 32px ;
+  height: 6px;
+  bottom: 0;
+  left: 64px;
+  right: 0;
+  background: #FFA72A;
+  border-radius: 10px;
 }
 .english-text-option{
   padding-left: 6px;
@@ -759,4 +855,53 @@ main .tg-icon{
 }
 .investors-element-14{
   background: url(/images/investors/image_14.png);
+}
+.epc-element{
+  width: 206px;
+  height: 163px;
+}
+.epc-element-1{
+  background: url(/images/epc/epc_1.png);
+}
+.epc-element-2{
+  background: url(/images/epc/epc_2.png);
+}
+.epc-element-3{
+  background: url(/images/epc/epc_3.png);
+}
+.epc-element-4{
+  background: url(/images/epc/epc_4.png);
+}
+.epc-element-5{
+  background: url(/images/epc/epc_5.png);
+}
+.epc-element-6{
+  background: url(/images/epc/epc_6.png);
+}
+.epc-element-7{
+  background: url(/images/epc/epc_7.png);
+}
+.epc-element-8{
+  background: url(/images/epc/epc_8.png);
+}
+.epc-element-9{
+  background: url(/images/epc/epc_9.png);
+}
+.epc-element-10{
+  background: url(/images/epc/epc_10.png);
+}
+.epc-element-11{
+  background: url(/images/epc/epc_11.png);
+}
+.epc-element-12{
+  background: url(/images/epc/epc_12.png);
+}
+.epc-element-13{
+  background: url(/images/epc/epc_13.png);
+}
+.epc-element-14{
+  background: url(/images/epc/epc_14.png);
+}
+.active-sub{
+  color: #FFA72A;
 }
