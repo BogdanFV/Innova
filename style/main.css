@@ -44,7 +44,6 @@ a:not([class]) {
 }
 
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -113,7 +112,6 @@ header a{
 }
 .page-language{
   height: 22px;
-  margin-right: 311px;
 }
 .page-language div{
   display: inline-block;
@@ -135,6 +133,12 @@ header a{
   background: #2B353B;
   box-shadow: 1px 1px 5px #000000;
   border-radius: 10px;
+}
+.menu-about{
+  font-weight: 600;
+  cursor: default;
+}
+.menu-about:hover{
 }
 .menu-about:hover .expandable-about{
   display: flex;
@@ -164,7 +168,7 @@ header a{
   text-shadow: 0px 0px 10px rgba(255, 167, 42, 0.9);
 }
 .menu-option-expandable:hover{
-  color: #FFA72A;
+  text-shadow: 0px 0px 10px rgba(255, 167, 42, 0.9);
 }
 .menu{
   position: relative;
@@ -252,6 +256,7 @@ header .projects-gas:after {
 .header-menu{
   display: flex;
   flex-direction: row;
+  margin-left: auto;
   height: 22px;
 }
 .menu:last-child{
@@ -261,7 +266,7 @@ header .projects-gas:after {
   font-weight: 600;
 }
 .banner{
-  width: 1440px;
+  width: 100%;
   height: 700px;
   border: none;
   background-image: url(/images/banner.png);
@@ -326,9 +331,11 @@ button:hover{
 }
 .countries{
   margin-top: 65px;
-  margin-left: 147px;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-image: url(/images/countries.png);
+  background: url(/images/countries.png) no-repeat ;
+  background-size: cover;
   height: 769px;
   width: 1137px;
 }
@@ -531,6 +538,12 @@ main .tg-icon{
   text-transform: lowercase;
 }
 
+footer a{
+  color: #EDEDED;
+}
+footer a:hover{
+  text-shadow: 0px 0px 10px rgba(255, 167, 42, 0.9);
+}
 .footer-main-block{
   display: flex;
   flex-direction: row;
@@ -644,6 +657,10 @@ main .tg-icon{
 }
 .images-in-text{
   margin-top: 56px;
+  width: 100%;
+}
+.images-in-text-first{
+  background: url(/images/);
 }
 .card-about-page-fifth ul li:first-child {
   padding-top: 0px;
@@ -904,4 +921,65 @@ main .tg-icon{
 }
 .active-sub{
   color: #FFA72A;
+}
+.menu-about span:hover{
+  text-shadow: 0px 0px 10px rgba(255, 167, 42, 0.9);
+}
+
+@media screen and (max-width: 1440px) {
+  .grid{
+    width: 1200px;
+  }
+  button{
+    width: 350px;
+  }
+  .banner-buttons{
+    width: 1100px;
+  }
+  .countries{
+    width: 761px;
+    height: 515px;
+  }
+  .card-text-standart{
+    font-size: 16px;
+  }
+  li{
+    font-size: 16px;
+  }
+  .card-text{
+    width: 660px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .grid{
+    width: 992px;
+  }
+  .banner{
+    height: 550px;
+  }
+  button{
+    width: 250px;
+  }
+  .banner-buttons{
+    width: 880px;
+    margin-top: 40px;
+  }
+  .header-cover {
+    font-size: 12px;
+  }
+  .menu{
+    margin-right: 35px;
+  }
+  .english-option {
+    margin-right: 10px;
+  } 
+  .card-text-standart{
+    font-size: 14px;
+  }
+  li{
+    font-size: 14px;
+  }
+  .contacts-mail{
+    font-size: 18px;
+  }
 }
