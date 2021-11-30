@@ -437,7 +437,7 @@ li{
 ul.card-text-list li:first-child{
   padding-top: 25px;
 }
-li:before{
+main li:before{
   content:"·";
   margin: 0 10px 0 10px;
   font-size: 18px;
@@ -1289,7 +1289,7 @@ footer a:hover{
 }
 @media screen and (max-width: 550px) {
   .grid{
-    padding-top: 24px;
+    padding-top: 44px;
   }
   .menu-cover{
     display: block;
@@ -1298,8 +1298,13 @@ footer a:hover{
     margin-right: 0;
     margin-left: auto;
 
+    position: absolute;
+    top: 24px;
+    right: 0;
+
+
     background: #C4C4C4;
-    border-radius: 9px;
+    border-radius: 10px;
   }
   .mobile-menu__button{
     background: none;
@@ -1310,10 +1315,58 @@ footer a:hover{
     display: none;
   }
   .menu-sub-item{
+    float:right;
     margin-bottom: 5.5px;
     width: 24px;
     height: 2.5px;
     background-color: #FBFBFB;
     border-radius: 25px;
+  }
+  .expandable-mobile-menu{
+    position: absolute;
+    right: 0;
+
+    padding-top: 16px;
+    padding-left: 27px;
+    background-color: #FFA72A;
+    align-items: center;
+
+    width: 149px;
+    height: 277px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .expandable-mobile-menu img{
+    width: 98px;
+    height: 31px;
+  }
+  .expandable-menu-item{
+    margin-top: 21px;
+  }
+  .hidden-menu{
+    display: none !important;
+  }
+  .expandable-menu-language{
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-cover ul#mobile-menu li{
+  }
+  .menu-cover ul#mobile-menu{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .ru-language{
+    margin-left: 26px;
+  }
+  .menu-cover .mobile-menu-active{
+    font-weight: 800;
   }
 }
