@@ -26,4 +26,4 @@ menuButton.addEventListener('click', (event) => {
     buttonCover.style.borderRadius ="9px";
     menuButton.style.borderRadius ="9px";
   }
-})
+});

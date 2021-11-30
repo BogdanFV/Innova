@@ -771,6 +771,9 @@ footer a:hover{
 .menu-cover{
   display: none;
 }
+.footer-fifth-column{
+  display: none;
+}
 @media screen and (max-width: 1440px) {
   .grid{
     width: 1200px;
@@ -1259,7 +1262,7 @@ footer a:hover{
     margin-top: 0;
   }
   .grey-cover {
-    padding-bottom: 10px
+    padding-bottom: 40px;
   }
   .contacts{
     margin-bottom: 41px;
@@ -1290,6 +1293,56 @@ footer a:hover{
 @media screen and (max-width: 550px) {
   .grid{
     padding-top: 44px;
+    width: 425px;
+  }
+  .banner-buttons {
+    width: 350px;
+  }
+  .banner-button button{
+    width: 107px;
+    height: 52px;
+    font-size: 8px;
+  }
+  .countries{
+    margin-top: 35px;
+
+    width: 319px;
+    height: 216px;
+  }
+  .countries-header {
+    padding-top: 5px;
+    font-size: 14px;
+  }
+  .partners-template {
+    padding-bottom: 40px;
+  }
+  .card-text {
+    margin: 15px;
+  }
+  .card span{
+    font-size: 10px;
+  }
+  .card-text-standart {
+    font-size: 6px;
+  }
+  ul.card-text-list li {
+    font-size: 6px;
+    line-height: 100%;
+  }
+  main li:before{
+    line-height: 10px;
+  }
+  .contacts-mail {
+    margin-top: 22px;
+    margin-bottom: 30px;
+    
+    font-size: 12px;
+  }
+  .contacts-phone {
+    font-size: 10px;
+  }
+  .contacts-text-small {
+    font-size: 10px;
   }
   .menu-cover{
     display: block;
@@ -1310,6 +1363,7 @@ footer a:hover{
     background: none;
     border: none;
     padding: 13px 14px;
+    width: 100%;
   }
   .header-cover{
     display: none;
@@ -1356,8 +1410,6 @@ footer a:hover{
     display: flex;
     flex-direction: row;
   }
-  .menu-cover ul#mobile-menu li{
-  }
   .menu-cover ul#mobile-menu{
     padding-top: 16px;
     display: flex;
@@ -1368,5 +1420,230 @@ footer a:hover{
   }
   .menu-cover .mobile-menu-active{
     font-weight: 800;
+  }
+  .footer-second-column{
+    display: none;
+  }
+  .footer-third-column{
+    display: none;
+  }
+  .footer-fourth-column{
+    display: none;
+  }
+  .footer-fifth-column{
+    display: block;
+    margin-right: 20px;
+  }
+  #pc-icons{
+    display: none;
+  }
+  .footer-main-block{
+    justify-content: space-between;
+  }
+  .footer-first-column{
+    margin-left: 20px;
+  }
+  .back-button-cover{
+    display: flex;
+    flex-direction: row;
+    margin-left: 42px;
+    margin-bottom: 50px;
+  }
+  .back-arrow{
+    margin-left: 6px;
+  }
+  .card-text-standart {
+    padding-top: 10px;
+  }
+  .banner-first-header {
+    line-height: 18px;
+  }
+  .banner-second-header{
+    line-height: 24px;
+  }
+  .partners-block {
+    grid-template-columns: 55px 55px 55px 55px 55px;
+    grid-gap: 30px;
+    column-gap: 25px;
+    padding-left: 25px;
+  }
+  
+  .partners-block-header{
+    padding: 15px 0 15px 30px;
+  }
+  .info-block{
+    width: 200px;
+  }
+  .info-grid {
+    grid-template-columns: 200px 200px;
+    grid-row-gap: 25px;
+    grid-column-gap: 22px;
+  }
+  .info-image {
+    margin-top: 5px;
+  }
+  .info-image img{
+    border-radius: 5px;
+  }
+  .info-block-header {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .text-header {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .grid{
+    padding-top: 32px;
+    width: 320px;
+  }
+  .banner-first-header {
+    line-height: 14px;
+    font-size: 14px;
+  }
+  .banner-second-header {
+    font-size: 14px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    line-height: 19px;
+    width: 255px;
+  }
+  .banner-buttons{
+    width: 280px;
+    line-height: 1;
+  }
+  .banner-button button {
+    width: 86px;
+    height: 40px;
+    font-size: 5px;
+    line-height: 10px;
+  }
+  .contacts-map{
+    height: 140px;
+    border-radius: 10px;
+  }
+  .text-header {
+    font-size: 8px;
+  }
+  .grey-cover {
+    padding-bottom: 10px;
+    
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  } 
+  .text-address {
+    font-size: 8px;
+  }
+  .contacts-mail{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .contacts-text-small {
+    width: auto;
+  }
+  .contacts br{
+    display: none;
+  }
+  .contacts-text-small {
+    line-height: 11px;
+    
+    font-size: 6px;
+  }
+  .contacts-mail{
+    font-size: 7px;
+  }
+  .contacts-block-icons {
+    padding-right: 15px;
+    height: 18px;
+  }
+  .contacts-phone {
+    font-size: 8px;
+  } 
+  .contacts-text-small {
+    margin-top: 5px;
+  }
+  .info-grid {
+    grid-template-columns: 150px 150px;
+    grid-row-gap: 25px;
+    grid-column-gap: 22px;
+  }
+  .info-block{
+    width: 150px;
+    padding: 12px 14px 11px;
+    border-radius: 10px;
+  }
+  .info-block-header {
+    font-size: 8px;
+    line-height: 11px;
+  }
+  .partners-block-header{
+    font-size: 12px;
+  }
+  .partners-block {
+    grid-template-columns: 42px 42px 42px 42px 42px;
+    grid-gap: 15px;
+    column-gap: 15px;
+    padding-left: 25px;
+  }
+  .about-page-header {
+    margin: 12px 0 14px 10px;
+  }
+  .card{
+    border-radius: 15px;
+  }
+  .card-image-right{
+    border-radius:0 15px 15px 0;
+  }
+  .card-image-left{
+    border-radius:15px 0 0 15px;
+  }
+  .documents-block{
+    margin-top: 12px;
+  }
+  .card span {
+    font-size: 8px;
+  }
+  .contacts-map {
+    margin-left: 15px;
+    width: 240px;
+  }
+  .contacts-text{
+    margin-left: 10px;
+  }
+  .countries {
+    width: 246px;
+    height: 172px;
+  }
+  .countries-header{
+    line-height: 10px;
+  }
+  .card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .about-page-header{
+    font-size: 14px;
+  }
+  .empty-document-space{
+    width: 20px;
+  }
+  .partners-template{
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .partners-block{
+    padding-left: 15px;
+  }
+  #investors{
+    margin-top: 10px;
+  }
+  #epc{
+    margin-top: -15px;
+  }
+  .banner{
+    border-radius: 15px;
+    padding-bottom: 17px;
   }
 }
