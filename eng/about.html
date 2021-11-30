@@ -22,9 +22,9 @@
                     </div>
                     <div class="page-language">
                         <div class="english-option menu-option">
-                            <div class="english-text-option active">
+                            <a class="english-text-option active">
                                 en
-                            </div>
+                            </a>
                         </div>
                         <div class="russian-option menu-option">
                             <div class="russian-text-option">
@@ -33,16 +33,14 @@
                         </div>
                     </div>
                     <div class="header-menu">
-                        <div class="menu menu-option menu-home">
-                            <a href="/eng/index.html">home</a>
-                        </div>
+                        <a href="/eng/index.html" class="menu menu-option menu-home">
+                            home
+                        </a>
                         <div class="menu menu-about active-about ">
                             <div class="expandable-about">
-                                <div class="menu-option menu-option-expandable">
-                                    <a href="/eng/activities.html">
-                                        What/how we do
-                                    </a>
-                                </div>
+                                <a href="/eng/activities.html" class="menu-option menu-option-expandable">
+                                    What/how we do
+                                </a>
                                 <div class="expandable-divider"></div>
                                 <div class="menu-option menu-option-expandable">
                                     <a href="/eng/about.html" class="active-sub">
@@ -52,12 +50,12 @@
                             </div>
                             <span class="active-about">about us</span>
                         </div>
-                        <div class="menu menu-option menu-projects">
-                            <a href="/eng/petrochemical.html">projects</a>
-                        </div>
-                        <div class="menu menu-option menu-partners">
-                            <a href="/eng/partners.html">partners</a>
-                        </div>
+                        <a class="menu menu-option menu-projects" href="/eng/petrochemical.html">
+                            projects
+                        </a>
+                        <a class="menu menu-option menu-partners" href="/eng/partners.html">
+                            partners
+                        </a>
                         <div class="menu menu-option menu-contacts">
                             <a href="/eng/index.html#contacts-anchor">contacts</a>
                         </div>
@@ -150,9 +148,11 @@
         <div class="grid">
             <div class="footer-main-block">
                 <div class="footer-first-column">
-                    <a href="/eng/index.html">
-                        <div class="footer-logo"></div>
-                    </a>
+                    <div id="footer-logo">
+                        <a href="/eng/index.html">
+                            <img class="footer-logo" src="/images/logo.svg">
+                        </a>
+                    </div>
                     <div class="footer-mail">info@innova-cons.com</div>
                     <div class="footer-phone">+7 499 922 88 71</div>
                     <div class="footer-social-icons">
@@ -203,7 +203,7 @@
                     </div>
                     <div class="footer-column-text">
                         <a href="/eng/mining.html">
-                            Mining and metallurgical<br>industry
+                            Mining and metallurgical<br class="footer-br"> industry
                         </a>
                     </div>
                     <div class="footer-column-text">
@@ -228,7 +228,7 @@
                             Client List (EPC Companies)
                         </a>
                     </div><br><br>
-                    <div class="footer-column-header">
+                    <div id="footer-contacts" class="footer-column-header">
                         <a href="/eng/index.html#contacts-anchor">
                             Contacts
                         </a>
