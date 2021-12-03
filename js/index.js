@@ -1,20 +1,18 @@
-/*let menuParent = document.querySelector('.header-menu');
-let menuOption = menuParent.querySelectorAll('.menu-option');
-menuParent.addEventListener('click', (event) => {
-    let target = event.target;
-    if(target.classList.contains('menu-option')) {
-      for(let i = 0; i < menuOption.length; i++) {
-        menuOption[i].classList.remove('active');
-      }
-      target.classList.add('active');
-    }
-});
-*/
 let menu = document.getElementById("mobile-menu");
 let buttonCover = document.getElementById("mobile-menu-cover");
 let menuButton = document.getElementById("mobile-menu-button");
-menuButton.addEventListener('click', (event) => {
-  let target = event.target;
+let pileIcon = document.getElementById("card-view-pile");
+let blocksIcon = document.getElementById('card-view-blocks');
+let cards = document.getElementById("cards");
+let CF = 0;
+if(window.screen.width > 1024){
+  CF = 1;
+} else if((window.screen.width > 768)&&(window.screen.width < 1024)){
+  CF = 1;
+} else if(window.screen.width > 768){
+  CF = 0.5;
+}
+menuButton.addEventListener('click', () => {
   if(menu.classList.contains('hidden-menu')){
     menu.classList.remove('hidden-menu');
     menuButton.style ="background:#FFA72A";
@@ -27,3 +25,57 @@ menuButton.addEventListener('click', (event) => {
     menuButton.style.borderRadius ="9px";
   }
 });
+
+function cardsRotation(){
+  if(cards.classList.contains('pile-cards')){
+    cards.firstElementChild.style = "z-index:"+ cards.children.length + ";" + " transform: rotate(0deg);" + " top:" + 50 *  cards.children.length + "px";
+
+    for(let i = 1; i < cards.children.length; i++){
+      if(i % 2 == 0){
+        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(1.5deg);" + " top:" + 50 * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
+      } else{
+        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(-1.5deg);" + " top:" + 50 * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
+      }
+    }
+    cards.style.height = cards.firstElementChild.offsetHeight + cards.children.length * 50 + 50 + "px" ;
+  }
+  console.log(cards.firstElementChild.offsetHeight)
+}
+function straightCards(){
+  if(!cards.classList.contains('pile-cards')){
+    for(let i = 0; i < cards.children.length; i++){
+      cards.children[i].style = "transform: rotate(0deg);"
+    }
+    cards.style.height = "auto";
+  }
+}
+
+function prependItem(){
+  let testingCards = document.querySelectorAll('.pile-cards > .card');
+  for (let i = 0; i < cards.children.length; i++) {
+    testingCards[i].addEventListener('click', () => {
+      if(cards.classList.contains('pile-cards')){
+        cards.prepend(testingCards[i]);
+        cardsRotation()
+      }
+    });
+  }
+}
+
+pileIcon.addEventListener('click', () => {
+  cards.classList.add('pile-cards');
+  pileIcon.style.fill = "#FFA72A"
+  blocksIcon.style.fill = "#EDEDED"
+  prependItem()
+  cardsRotation()
+});
+
+blocksIcon.addEventListener('click', () => {
+  cards.classList.remove('pile-cards')
+  blocksIcon.style.fill = "#FFA72A"
+  pileIcon.style.fill = "#EDEDED"
+  straightCards();
+});
+
+
+

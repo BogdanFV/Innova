@@ -72,6 +72,9 @@ a{
 .popup__content{
   display: none !important;
 }
+.map-widget-content-view__frame {
+  display: none !important;
+}
 body{
   background: #09151D;
   color: #EDEDED;
@@ -354,9 +357,12 @@ button:hover{
   display: flex;
   flex-direction: row;
   margin-bottom: 65px;
+  width: 100%;
 
+  overflow: hidden;
   background: #F0F0F0;
   border-radius: 40px;
+  box-shadow: 0px 0px 10px 5px rgba(87, 110, 124, 0.7);
 }
 .card-image{
   width: 41%;
@@ -401,9 +407,6 @@ button:hover{
 }
 .card-image-eleventh{
   background-image: url(/images/cards/card-11.png);
-}
-.card-main-first{
-  margin-top: 64px;
 }
 .card-text{
   width: 59%;
@@ -752,9 +755,6 @@ footer a:hover{
   height: 100%;
   width: 100%;
 }
-.footer-social-icons{
-  width: 80px;
-}
 #footer-logo{
   height: auto;
   width: 212px;
@@ -769,10 +769,40 @@ footer a:hover{
 }
 .menu-cover{
   display: none;
+  z-index: 100;
 }
 .footer-fifth-column{
   display: none;
 }
+.card-view-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.card-view-flex div{
+  width: 62px;
+  height: 42px;
+}
+.card-view-flex svg{
+  width: 62px;
+  height: 42px;
+}
+.card-view-blocks{
+  margin-left: 18px;
+}
+.pile-cards{
+  position: relative;
+}
+.pile-cards > div{
+  position: absolute;
+}
+.card-view-flex > div :hover{
+  cursor: pointer;
+  width: 115%;
+  height: 115%;
+}
+
 @media screen and (max-width: 1440px) {
   .grid{
     width: 1200px;
@@ -927,6 +957,7 @@ footer a:hover{
     width: 21.5px;
     left: 43px;
   }
+  
 }
 @media screen and (max-width: 1024px) {
   .grid{
@@ -1051,6 +1082,9 @@ footer a:hover{
     font-size: 18px;
     margin-bottom: 42px;
   }
+  .footer-social-icons{
+    width: 80px;
+  }
 }
 @media screen and (max-width: 768px) {
   .grid{
@@ -1116,6 +1150,9 @@ footer a:hover{
     font-weight: bold;
     font-size: 26px;
     line-height: 44px;
+  }
+  .contacts{
+    margin-top: 40px;
   }
   .contacts-text {
     margin-left: 20px;
@@ -1280,9 +1317,6 @@ footer a:hover{
   }
   .contacts-map {
     width: 265px;
-  }
-  .card-main-first{
-    margin-top: 12px;
   }
   .about-page-header{
     margin-bottom: 14px;
