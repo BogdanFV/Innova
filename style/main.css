@@ -457,8 +457,7 @@ main li:before{
   margin-bottom: 107px;
 }
 .contacts-map{
-  width: 308px;
-  height: 355px;
+  height: auto;
 
   border-radius: 40px;
 }
@@ -471,10 +470,11 @@ main li:before{
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
+  width: auto;
+  
 }
 .contacts-mail{
   margin-top: 22px;
-  margin-bottom: 67px;
 
   font-style: normal;
   font-weight: 500;
@@ -482,6 +482,9 @@ main li:before{
   line-height: 140%;
 
   text-transform: lowercase;
+}
+.contacts-block{
+  margin-bottom: 67px;
 }
 .text-address{
   font-style: normal;
@@ -492,26 +495,13 @@ main li:before{
 .contacts-block{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .contacts-block-icons{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   height: 32px;
-}
-.contacts-icon{
-  width:32.5px ; 
-
-  height: 32px; 
-
-}
-.main-contacts{
-  margin-left: 190px;
-}
-main .fb-icon{
-  margin-left: 49px;
-}
-main .tg-icon{
-  margin-left: 51px;
 }
 .contacts-phone{
   margin-top: 26px;
@@ -520,6 +510,11 @@ main .tg-icon{
   font-weight: 500;
   font-size: 24px;
   line-height: 140%;
+}
+.phone{
+  margin-right: 0;
+  margin-left: auto;
+  float: right;
 }
 .contacts-mail{
   font-style: normal;
@@ -548,7 +543,6 @@ footer a:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 141px;
 }
 .footer-mail{
   margin-top: 25px;
@@ -711,8 +705,6 @@ footer a:hover{
   height: 100%;
   width: 100%;
 }
-
-
 .partners-template{
   background: #FEFEFE;
   border-radius: 40px;
@@ -754,6 +746,10 @@ footer a:hover{
 .contacts-icon img{
   height: 100%;
   width: 100%;
+  
+}
+.contacts-icon{
+  margin: 5px;
 }
 #footer-logo{
   height: auto;
@@ -802,7 +798,9 @@ footer a:hover{
   width: 115%;
   height: 115%;
 }
-
+.main-contacts {
+  margin-left: 200px;
+}
 @media screen and (max-width: 1440px) {
   .grid{
     width: 1200px;
@@ -963,6 +961,10 @@ footer a:hover{
   .grid{
     width: 768px;
   }
+  .main-contacts {
+    margin-top: 20px;
+    margin-left: 0;
+  }
   .info-block{
     width: 369px;
   }
@@ -1022,10 +1024,7 @@ footer a:hover{
   #footer-contacts{
     display: none;
   }
-  .contacts-icon{
-    width: 16px;
-    height: 16px;
-  }
+ 
   #footer-logo{
     height: auto;
     width: 115px;
@@ -1068,12 +1067,7 @@ footer a:hover{
     font-size: 12px;
     margin-top: 10px;
   }
-  main .fb-icon {
-    margin-left: 20px;
-  }
-  main .tg-icon {
-    margin-left: 20px;
-  }
+
   .contacts-block-icons {
     margin-top: 15px;
     height:  30px;
@@ -1082,9 +1076,7 @@ footer a:hover{
     font-size: 18px;
     margin-bottom: 42px;
   }
-  .footer-social-icons{
-    width: 80px;
-  }
+
 }
 @media screen and (max-width: 768px) {
   .grid{
@@ -1131,6 +1123,9 @@ footer a:hover{
     grid-row-gap: 25px;
     grid-column-gap: 20px;
   }
+  .contacts-block{
+    flex-direction: column;
+  }
   .card-text-standart{
     font-size: 10px;
   }
@@ -1165,10 +1160,6 @@ footer a:hover{
   }
   .text-address {
     font-size: 12px;
-  }
-  .contacts-map{
-    width: 215px;
-    height: 248px;
   }
   .card{
     margin-bottom: 25px;
@@ -1287,11 +1278,9 @@ footer a:hover{
   .text-header {
     font-size: 14px;
   }
-  .main-contacts {
-    margin-left: 0;
-  }
+ 
   .contacts-text-small{
-    width: 150px;
+    width: auto;
   }
   .main-contacts{
     margin-left: 10px;
@@ -1315,15 +1304,22 @@ footer a:hover{
   .footer-fourth-column{
     margin-top: 0;
   }
-  .contacts-map {
-    width: 265px;
-  }
   .about-page-header{
     margin-bottom: 14px;
   }
   .expandable-about{
     top: 44px;
   }
+
+  .contacts-phone{
+    margin-top: 15px;
+  }
+  .phone {
+    font-size: 15px;
+    margin-right: auto;
+    float: none;
+  }
+  
 }
 @media screen and (max-width: 550px) {
   .grid{
@@ -1337,6 +1333,10 @@ footer a:hover{
     width: 107px;
     height: 52px;
     font-size: 8px;
+  }
+  .contacts-block{
+    margin-bottom: 10px;
+    flex-direction: column;
   }
   .countries{
     margin-top: 35px;
@@ -1368,17 +1368,10 @@ footer a:hover{
     line-height: 10px;
     font-size: 10px;
   }
-  .contacts-mail {
-    margin-top: 22px;
-    margin-bottom: 30px;
-    
-    font-size: 12px;
-  }
-  .contacts-phone {
-    font-size: 10px;
-  }
-  .contacts-text-small {
-    font-size: 10px;
+ 
+  .main-contacts .contacts-icon{
+    width: 100%;
+    height: 100%;
   }
   .menu-cover{
     display: block;
@@ -1539,6 +1532,12 @@ footer a:hover{
     margin-right: auto;
     border-radius: 15px 0px 0px 15px;
   } 
+  .main-contacts{
+    margin-left: 0;
+  }
+  .contacts-text-small{
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 435px) {
   .grid{
@@ -1570,12 +1569,12 @@ footer a:hover{
     line-height: 10px;
   }
   .contacts-map{
-    height: 140px;
     border-radius: 10px;
   }
   .text-header {
-    font-size: 10px;
+    font-size: 18px;
   }
+  
   .grey-cover {
     padding-bottom: 10px;
     
@@ -1585,31 +1584,26 @@ footer a:hover{
   .text-address {
     font-size: 10px;
   }
-  .contacts-mail{
-    margin-top: 5px;
+  .contacts-block{
     margin-bottom: 5px;
   }
-  .contacts-text-small {
-    width: auto;
+  .contacts-mail{
+    font-size: 12px;
   }
+ 
   .contacts br{
     display: none;
   }
-  .contacts-text-small {
+  .contacts-text-small{
+    width: auto;
     line-height: 11px;
-    
-    font-size: 10px;
-  }
-  .contacts-mail{
-    font-size: 7px;
+    font-size: 14px;
   }
   .contacts-block-icons {
     padding-right: 15px;
     height: 18px;
   }
-  .contacts-phone {
-    font-size: 10px;
-  } 
+  
   .contacts-text-small {
     margin-top: 5px;
   }
@@ -1656,7 +1650,6 @@ footer a:hover{
   }
   .contacts-map {
     margin-left: 15px;
-    width: 240px;
   }
   .contacts-text{
     margin-left: 10px;
