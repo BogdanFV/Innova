@@ -4,14 +4,16 @@ let menuButton = document.getElementById("mobile-menu-button");
 let pileIcon = document.getElementById("card-view-pile");
 let blocksIcon = document.getElementById('card-view-blocks');
 let cards = document.getElementById("cards");
-let CF = 0;
+let CF = 1;
+let paddingCard = 1;
 if(window.screen.width > 1024){
-  CF = 1;
+  paddingCard = 100;
 } else if((window.screen.width > 768)&&(window.screen.width < 1024)){
-  CF = 1;
-} else if(window.screen.width > 768){
-  CF = 0.5;
+  paddingCard = 75;
+} else if(window.screen.width < 768){
+  paddingCard = 50;
 }
+console.log(window.screen.width);
 menuButton.addEventListener('click', () => {
   if(menu.classList.contains('hidden-menu')){
     menu.classList.remove('hidden-menu');
@@ -27,19 +29,19 @@ menuButton.addEventListener('click', () => {
 });
 
 function cardsRotation(){
+  
   if(cards.classList.contains('pile-cards')){
-    cards.firstElementChild.style = "z-index:"+ cards.children.length + ";" + " transform: rotate(0deg);" + " top:" + 50 *  cards.children.length + "px";
+    cards.firstElementChild.style = "z-index:"+ cards.children.length + ";" + " transform: rotate(0deg);" + " top:" + paddingCard *  cards.children.length + "px";
 
     for(let i = 1; i < cards.children.length; i++){
       if(i % 2 == 0){
-        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(1.5deg);" + " top:" + 50 * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
+        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(1.5deg);" + " top:" + paddingCard * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
       } else{
-        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(-1.5deg);" + " top:" + 50 * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
+        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(-1.5deg);" + " top:" + paddingCard * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
       }
     }
-    cards.style.height = cards.firstElementChild.offsetHeight + cards.children.length * 50 + 50 + "px" ;
+    cards.style.height = cards.firstElementChild.offsetHeight + ((cards.children.length + 1) * paddingCard) + "px" ;
   }
-  console.log(cards.firstElementChild.offsetHeight)
 }
 function straightCards(){
   if(!cards.classList.contains('pile-cards')){
