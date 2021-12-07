@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,59 +11,57 @@
     <title>Innova</title>
 </head>
 <body>
-    <div class="grey-cover">
+    <div class="grey-cover about-cover">
         <header>
             <div class="grid">
                 <div class="header-cover">
                     <div class="logo-cover">
-                        <a href="/eng/index.html">
+                        <a href="/ru/index.html">
                             <img src="/images/logo.svg">
                         </a>
                     </div>
                     <div class="page-language">
                         <div class="english-option menu-option">
-                            <a class="english-text-option active">
+                            <a href="/ru/about.html" class="english-text-option">
                                 en
                             </a>
                         </div>
                         <div class="russian-option menu-option">
-                            <a href="/ru/index.html"  class="russian-text-option">
+                            <a class="russian-text-option active">
                                 rus
                             </a>
                         </div>
                     </div>
                     <div class="header-menu">
-                        <a href="/eng/index.html" class="active menu menu-option menu-home">
-                            home
+                        <a href="/ru/index.html" class="menu menu-option menu-home">
+                            Главная
                         </a>
-                        <div class="menu menu-about">
+                        <div class="menu menu-about active-about ">
                             <div class="expandable-about">
-                                <div class="menu-option menu-option-expandable">
-                                    <a href="/eng/activities.html" class="menu-option menu-option-expandable">
-                                        What/how we do
-                                    </a>
-                                </div>
+                                <a href="/ru/activities.html" class="menu-option menu-option-expandable">
+                                    Что/как мы делаем
+                                </a>
                                 <div class="expandable-divider"></div>
                                 <div class="menu-option menu-option-expandable">
-                                    <a href="/eng/about.html">
-                                        About the company
+                                    <a href="/ru/about.html" class="active-sub">
+                                        О компании
                                     </a>
                                 </div>
                             </div>
-                            <span>about us</span>
+                            <span class="active-about">про нас</span>
                         </div>
-                        <a class="menu menu-option menu-projects" href="/eng/petrochemical.html">
-                            projects
+                        <a class="menu menu-option menu-projects" href="/ru/petrochemical.html">
+                            проекты
                         </a>
-                        <a class="menu menu-option menu-partners" href="/eng/partners.html">
-                            partners
+                        <a class="menu menu-option menu-partners" href="/ru/partners.html">
+                            партнеры
                         </a>
                         <div class="menu menu-option menu-contacts">
-                            <a href="/eng/index.html#contacts-anchor">contacts</a>
+                            <a href="/ru/index.html#contacts-anchor">контакты</a>
                         </div>
                     </div>
                 </div>
-                <div id="mobile-menu-cover"class="menu-cover">
+            <div id="mobile-menu-cover" class="menu-cover">
                     <button id="mobile-menu-button" class="mobile-menu__button">
                         <img src="/images/menu-icon.svg" class="menu__img"> 
                     </button>
@@ -71,23 +69,23 @@
                         <li class="expandable-menu-logo">
                             <img src="/images/logo.svg">
                         </li>
-                        <li class="expandable-menu-item expandable-menu-home mobile-menu-active">
-                            <a href="/eng/index.html">home</a>
+                        <li class="expandable-menu-item expandable-menu-home">
+                            <a href="/ru/index.html">главная</a>
                         </li>
-                        <li class="expandable-menu-item expandable-menu-about">
-                            <a href="/eng/about.html">about us</a>
+                        <li class="expandable-menu-item expandable-menu-about mobile-menu-active">
+                            <a href="/ru/about.html">про нас </a>
                         </li>
                         <li class="expandable-menu-item expandable-menu-projects">
-                            <a href="/eng/petrochemical.html">projects</a>
+                            <a href="/ru/petrochemical.html">проекты</a>
                         </li>
                         <li class="expandable-menu-item expandable-menu-partners">
-                            <a href="/eng/partners.html">partners</a>
+                            <a href="/ru/partners.html">партнеры</a>
                         </li>
                         <li class="expandable-menu-item expandable-menu-contacts">
-                            <a href="/eng/index.html#contacts-anchor">contacts</a>
+                            <a href="/ru/index.html#contacts-anchor">контакты</a>
                         </li>
                         <li class="expandable-menu-item expandable-menu-language">
-                            <a class="eng-language ">en</a>
+                            <a class="eng-language mobile-menu-active">en</a>
                             <a class="ru-language">rus</a>
                         </li>
                     </ul>
@@ -96,32 +94,7 @@
         </header>
         <main>
             <div class="grid">
-                <div class="banner">
-                    <div class="banner-first-header">Innova Construction Group</div>
-                    <div class="banner-second-header">Make Difference for Our Customers and People</div>
-                    <div class="banner-buttons">
-                        <div class="banner-button banner-button-first">
-                            <a href="/eng/petrochemical.html">
-                                <button>Petrochemical industry</button>
-                            </a>
-                        </div>
-                        <div class="banner-button banner-button-second">
-                            <a href="/eng/mining.html">
-                                <button>Mining and metallurgical industry</button>
-                            </a>
-                        </div>
-                        <div class="banner-button banner-button-third">
-                            <a href="/eng/gas.html">
-                                <button>LNG and gas industry</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="countries">
-                    <div class="countries-header">
-                        Where we worked
-                    </div>
-                </div>
+                <div class="text-header about-page-header">О компании</div>
                 <div class="card-view-flex">
                     <div class="card-view-pile">
                         <svg id="card-view-pile" width="62" height="42" fill="#FBFBFB" viewBox="0 0 62 42" xmlns="http://www.w3.org/2000/svg">
@@ -158,125 +131,60 @@
                 <div id="cards" class="cards blocks-cards">
                     <div class="card card-main-first">
                         <div class="card-text">
-                            <div class="text-header">The innova story</div>
+                            <div class="text-header">История компании</div>
                             <div class="card-text-standart">
-                                <span>Innova Construction Group</span> - ICG, has been established in year-2021, with main
-                                office located in Moscow and support office located in Istanbul.
+                                <span>Innova Construction Group</span> – Инженерно-строительная компания Иннова Констракшн Груп (далее INNOVA) была создана в 2021 году, главный офис находится в г. Москва, а вспомогательный офис - в Стамбуле.
                             </div>
                             <div class="card-text-standart">
-                                The management team are comprised of highly experienced in construction
-                                business. After holding various executive roles in large construction contracting
-                                enterprises, they have taken the initiative to continue their journey as Innova.
+                                Менеджмент компании состоит из высококвалифицированных специалистов в области строительства. После того, как они получили ценный опыт, на  различных руководящих должностях в крупных строительных подрядных организациях, они взяли на себя инициативу продолжить свой дальнейший путь в компании INNOVA.
                             </div>
                             <div class="card-text-standart list-header">
-                                Taking this viewpoint, capital of Innova is foreseen as:
+                                С этой позиции, опыт компании INNOVA может оцениваться следующим образом:
                             </div>
                             <ul class="card-text-list ">
-                                <li>More than 30 years experience in construction business,</li>
-                                <li>Successful delivery of more than 30 mega and middle scale projects,</li>
-                                <li>20 years of experience and operational excellence in Russian Federation,</li>
-                                <li>Operational presence and experience in various countries,</li>
-                                <li>Know-how in partnerships, JVs, consortiums and special projects,</li>
-                                <li>Qualified human resources and ability to quickly mobilize.</li>
+                                <li>Более 30 лет опыта в строительном бизнесе,</li>
+                                <li>Успешная реализация более 30 мега и средних проектов,</li>
+                                <li>20-летний опыт работы и высокое качество работы в Российской Федерации,</li>
+                                <li>Операционное присутствие и опыт работы в различных странах,</li>
+                                <li>Большой опыт (Ноу-Хау) в партнерствах, совместных предприятиях, консорциумах и специальных проектах,</li>
+                                <li>Квалифицированный персонал и способность быстро мобилизоваться.</li>
                             </ul>
                         </div>
-                        <div class="card-image card-image-right card-image-first"></div>
-                    </div>
-                    <div class="card card-main-second" >
-                        <div class="card-image card-image-left card-image-second"></div>
-                        <div class="card-text">
-                            <div class="text-header">Activities summary</div>
-                            <div class="card-text-standart">
-                                Our story is the combination of energy, passion, ambition, adoption, people
-                                and teamwork. We harness the power of our experience to provide high
-                                quality service for our clients.
-                            </div>
-                            <div class="card-text-standart">
-                                Thanks to the rich and deep experience in all facets of construction, we are
-                                ready to take any roles in your projects.
-                            </div>
-                            <div class="card-text-standart list-header">
-                                The main services:
-                            </div>
-                            <ul class="card-text-list ">
-                                <li>Construction Contracting</li>
-                                <li>Engineering</li>
-                                <li>Procurement and Logistics</li>
-                                <li>Fabrication</li>
-                                <li>Commissioning</li>
-                            </ul>
-                            <div class="card-text-standart">
-                                As a general/EPC contractor or subcontractor, we undertake role(s) in
-                                pipeline, petrochemical and energy complex, mining and metallurgical
-                                facility, cement and manufacturing industry and related building projects.
-                            </div>
+                        <div class="card-image card-image-right card-image-first">
+    
                         </div>
                     </div>
-                    <div class="card card-main-third">
+                    <div class="card card-about-page-nineth">
                         <div class="card-text">
-                            <div class="text-header">key facts</div>
-                            <ul class="card-text-list">
-                                <li>More than 80.000.000 man-hour in one single project</li>
-                                <li>20.000+ personnel in one project</li>
-                                <li>More than 2 million WDI welding works in one project</li>
-                                <li>Total managed projects' man-hour - 250.000.000+</li>
-                                <li>Design and operation experience in piping factory in the capacity of</li>
-                                <li>100.000 WDI per month</li>
-                                <li>One of the biggest slipforming operation in the world</li>
-                                <li>(2.000 m slipform in single operation)</li>
-                                <li>One of the biggest Light Weight Concrete (density: 2050 kg/m3)</li>
-                                <li>Gravity Based Structure in the world</li>
-                                <li>20.000 m3 double contaminant ammonia tank - Biggest in Russian Federatio</li>
-                            </ul>
+                            <div class="text-header">Цели, Задачи и Ценности</div>
+                            <div class="card-text-standart">
+                                Наша основная цель - «изменить мир к лучшему во благо наших клиентов и людей». 
+                            </div>
+                            <div class="card-text-standart">
+                                В ходе достижения этой главной цели Совершенство является неотъемлемой частью нашего бизнеса; Согласованность - наш волшебный инструмент для достижения успеха, а Амбиции - движущая сила для нашего совершенствования.
+                            </div>
+                            <div class="card-text-standart">
+                                Совершенство - Мы выделяем совершенство как основную ценность компании ICG, чтобы достигать более высокого уровня качества и безопасности в нашей деятельности, а также оправдать ожидания наших клиентов. Мы ставим перед собой более высокие цели, ответственно планируем, усердно работаем и соблюдаем все взятые на себя обязательства.
+                            </div>
+                            <div class="card-text-standart">
+                                Совершенство - Мы выделяем совершенство как основную ценность компании ICG, чтобы достигать более высокого уровня качества и безопасности в нашей деятельности, а также оправдать ожидания наших клиентов. Мы ставим перед собой более высокие цели, ответственно планируем, усердно работаем и соблюдаем все взятые на себя обязательства.
+                            </div>
+                            <div class="card-text-standart">
+                                Инновации - Ключевым элементом нашего подхода к ведению бизнеса является разработка и внедрение новейших технологий и процессов во всех сферах строительства. В рамках наших усилий по реализации этого подхода INNOVA развивает корпоративную культуру, в которой сотрудники делятся своими идеями и взаимодействуют друг с другом для разработки инновационных идей, а также для оценки и внедрения этих улучшений.
+                            </div>
+                            <div class="card-text-standart">
+                                Амбиции - Мы знаем, что каждый проект - это новый вызов для всех заинтересованных сторон. Как команда ICG и благодаря нашей очень амбициозной команде мы поддерживаем высокий уровень мотивации при любых обстоятельствах. Мы активно находим решения для наших клиентов, которые лучше всего соответствуют их целям. 
+                            </div>
+                            
                         </div>
-                        <div class="card-image card-image-right card-image-third"></div>
+                        <div class="card-image card-image-right card-image-eleventh"></div>
                     </div>
                 </div>
-                <div id="contacts-anchor"></div>
-                <div class="contacts">
-                    <div class="contacts-map"style="position:relative;overflow:hidden;">
-                        <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
-                            Москва
-                        </a>
-                        <a href="https://yandex.ru/maps/213/moscow/?ll=37.538351%2C55.654148&mode=routes&rtext=55.656682%2C37.540075~55.651557%2C37.538790&rtt=pd&ruri=ymapsbm1%3A%2F%2Forg%3Foid%3D243083506667~ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.539%252C55.652%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259F%25D1%2580%25D0%25BE%25D1%2584%25D1%2581%25D0%25BE%25D1%258E%25D0%25B7%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252065&utm_medium=mapframe&utm_source=maps&z=16.39" style="color:#eee;font-size:12px;position:absolute;top:14px;">
-                            Построение маршрутов на карте Москвы — Яндекс.Карты
-                        </a>
-                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUufXaGXD" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
-                    </div>
-                    <div class="contacts-text">
-                        <div class="contacts-block">
-                            <div class="contacts-block-text">
-                                <div class="text-header">contacts</div>
-                                <div class="contacts-text-small">For any questions and HR purposes contact us:</div>
-                                <div class="contacts-mail">info@innova-cons.com</div>
-                            </div>
-                            <div class="main-contacts">
-                                <div class="contacts-block-icons">
-                                    <div class="ig-icon contacts-icon">
-                                        <a href="https://www.instagram.com/innova_construction_group/">
-                                            <img src="/images/ig-icon.svg">
-                                        </a>
-                                    </div>
-                                    <div class="fb-icon contacts-icon">
-                                        <img src="/images/fb-icon.svg">
-                                    </div>
-                                    <div class="tg-icon contacts-icon">
-                                        <img src="/images/tg-icon.svg">
-                                    </div>
-                                    <div class="ln-icon contacts-icon">
-                                        <a href="https://www.linkedin.com/company/innova-construction-group">
-                                            <img src="/images/ln-icon.svg">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="contacts-phone">
-                                    <div class="phone">+7 499 922 88 71</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-header">Business address</div>
-                        <div class="text-address">C65 Profsoyuznaya Street, bld. 1, 10 th floor office 5.04 Moscow, 117342 Russian Federation</div>
-                    </div>
+                <div class="text-header about-page-meta-header">Корпоративные документы</div>
+                <div class="documents-block">
+                    <img class="first-document" src="/images/first-document.png">
+                    <div class="empty-document-space"></div>
+                    <img class="second-document" src="/images/second-document.png">
                 </div>
             </div>
         </main>
@@ -286,13 +194,13 @@
             <div class="footer-main-block">
                 <div class="footer-first-column">
                     <div id="footer-logo">
-                        <a href="/eng/index.html">
+                        <a href="/ru/index.html">
                             <img class="footer-logo" src="/images/logo.svg">
                         </a>
                     </div>
                     <div class="footer-mail">info@innova-cons.com</div>
                     <div class="footer-phone">+7 499 922 88 71</div>
-                    <div id="pc-icons" class="footer-social-icons">
+                    <div class="footer-social-icons">
                         <div class="ig-icon contacts-icon">
                             <a>
                                 <a href="https://www.instagram.com/innova_construction_group/">
@@ -319,68 +227,68 @@
                 </div>
                 <div class="footer-second-column">
                     <div class="footer-column-header">
-                        <a href="/eng/about.html">
-                            About us
+                        <a href="/ru/about.html">
+                           про нас
                         </a>
                     </div>
                     <div class="footer-column-text">
-                        <a href="/eng/activities.html">
-                            What we do
+                        <a href="/ru/activities.html">
+                            Что мы делаем
                         </a>
                     </div>
                     <div class="footer-column-text">
-                        <a href="/eng/about.html">
-                            About the company
+                        <a href="/ru/about.html">
+                            О компании
                         </a>
                     </div>
                 </div>
                 <div class="footer-third-column">
                     <div class="footer-column-header">
-                        <a href="/eng/petrochemical.html">
-                            Projects
+                        <a href="/ru/petrochemical.html">
+                            Проекты
                         </a>
                     </div>
                     <div class="footer-column-text">
-                        <a href="/eng/petrochemical.html">
-                            Petrochemical industry
+                        <a href="/ru/petrochemical.html">
+                            Нефтехимическая отрасль
                         </a>
                     </div>
                     <div class="footer-column-text">
-                        <a href="/eng/mining.html">
-                            Mining and metallurgical<br class="footer-br"> industry
+                        <a href="/ru/mining.html">
+                            Горнодобывающая и<br class="footer-br"> металлургическая отрасли
                         </a>
                     </div>
                     <div class="footer-column-text">
-                        <a href="/eng/gas.html">
-                            LNG and gas industry
+                        <a href="/ru/gas.html">
+                            СПГ и газовая отрасль
                         </a>
                     </div>
                 </div>
                 <div class="footer-fourth-column">
                     <div class="footer-column-header">
-                        <a href="/eng/partners.html">
-                            Partners
+                        <a href="/ru/partners.html">
+                            Партнеры
                         </a>
                     </div>
                     <div class="footer-column-text">
-                        <a href="/eng/partners.html#investors">
-                            Client List (Investors)
+                        <a href="/ru/partners.html#investors">
+                            Список клиентов (Инвесторов)
                         </a>
                     </div>
                     <div class="footer-column-text">
-                        <a href="/eng/partners.html#epc">
-                            Client List (EPC Companies)
+                        <a href="/ru/partners.html#epc">
+                            Список клиентов (Генподрядные организации)
                         </a>
                     </div><br><br>
                     <div id="footer-contacts" class="footer-column-header">
-                        <a href="/eng/index.html#contacts-anchor">
-                            Contacts
+                        <a href="/ru/index.html#contacts-anchor">
+                            Контакты
                         </a>
                     </div>
                 </div>
                 <div class="footer-fifth-column">
                     <a class="back-button-cover" href="#">
-                        <div class="back-arrow-text">Up</div>
+                        <div class="back-arrow-text">Наверх</div>
                         <img class="back-arrow" src="/images/footer-arrow.svg">
                     </a>
                     <div id="mobile-icons" class="footer-social-icons">
@@ -400,12 +308,12 @@
                             <a>
                                 <img src="/images/tg-icon.svg">
                             </a>
-                        </div>                     
+                        </div>                       
                         <div class="ln-icon contacts-icon">
                             <a href="https://www.linkedin.com/company/innova-construction-group/">
                                 <img src="/images/ln-icon.svg">
                             </a>
-                        </div>                       
+                        </div>                      
                     </div>
                 </div>
             </div>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap" rel="stylesheet">
+    <title>Innova</title>
+</head>
+<body>
+    <div class="grey-cover">
+        <header>
+            <div class="grid">
+                <div class="header-cover">
+                    <div class="logo-cover">
+                        <a href="/ru/index.html">
+                            <img src="/images/logo.svg">
+                        </a>
+                    </div>
+                    <div class="page-language">
+                        <div class="english-option menu-option">
+                            <a href="/eng/activities.html" class="english-text-option">
+                                en
+                            </a>
+                        </div>
+                        <div class="russian-option menu-option">
+                            <a class="russian-text-option active">
+                                rus
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-menu">
+                        <a href="/ru/index.html" class="menu menu-option menu-home">
+                            Главная
+                        </a>
+                        <div class="menu menu-about active-activities">
+                            <div class="expandable-about">
+                                <div class="menu-option menu-option-expandable">
+                                    <a href="/ru/activities.html"  class="active-sub">
+                                        Что/как мы делаем
+                                    </a>
+                                </div>
+                                <div class="expandable-divider"></div>
+                                <div class="menu-option menu-option-expandable">
+                                    <a href="/ru/about.html">
+                                        О компании
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="active-activities">про нас</span>
+                        </div>
+                        <a class="menu menu-option menu-projects" href="/ru/petrochemical.html">
+                            проекты
+                        </a>
+                        <a class="menu menu-option menu-partners" href="/ru/partners.html">
+                            партнеры
+                        </a>
+                        <div class="menu menu-option menu-contacts">
+                            <a href="/ru/index.html#contacts-anchor">контакты</a>
+                        </div>
+                    </div>
+                </div>
+            <div id="mobile-menu-cover" class="menu-cover">
+                    <button id="mobile-menu-button" class="mobile-menu__button">
+                        <img src="/images/menu-icon.svg" class="menu__img"> 
+                    </button>
+                    <ul id="mobile-menu" class="expandable-mobile-menu hidden-menu">
+                        <li class="expandable-menu-logo">
+                            <img src="/images/logo.svg">
+                        </li>
+                        <li class="expandable-menu-item expandable-menu-home">
+                            <a href="/ru/index.html">главная</a>
+                        </li>
+                        <li class="expandable-menu-item expandable-menu-about">
+                            <a href="/ru/about.html">про нас</a>
+                        </li>
+                        <li class="expandable-menu-item expandable-menu-projects">
+                            <a href="/ru/petrochemical.html">проекты</a>
+                        </li>
+                        <li class="expandable-menu-item expandable-menu-partners">
+                            <a href="/ru/partners.html">партнеры</a>
+                        </li>
+                        <li class="expandable-menu-item expandable-menu-contacts">
+                            <a href="/ru/index.html#contacts-anchor">контакты</a>
+                        </li>
+                        <li class="expandable-menu-item expandable-menu-language">
+                            <a class="ru-language mobile-menu-active">en</a>
+                            <a class="ru-language">rus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="grid">
+                <div class="text-header about-page-header">Что/Как мы делаем?</div>
+                <div class="card-view-flex">
+                    <div class="card-view-pile">
+                        <svg id="card-view-pile" width="62" height="42" fill="#FBFBFB" viewBox="0 0 62 42" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7002 1.75C16.9388 1.75 14.7002 3.98858 14.7002 6.75V15.0168H14.7005V23.2835C14.7005 26.0449 16.9391 28.2835 19.7005 28.2835H58.6051C61.3665 28.2835 63.605 26.0449 63.605 23.2835V15.0167H63.6047V6.75C63.6047 3.98858 61.3661 1.75 58.6047 1.75H19.7002Z" />
+                            <path d="M14.7002 15.0168H13.7002V16.0168H14.7002V15.0168ZM14.7005 15.0168H15.7005V14.0168H14.7005V15.0168ZM63.605 15.0167H64.605V14.0167H63.605V15.0167ZM63.6047 15.0167H62.6047V16.0167H63.6047V15.0167ZM15.7002 6.75C15.7002 4.54086 17.4911 2.75 19.7002 2.75V0.75C16.3865 0.75 13.7002 3.43629 13.7002 6.75H15.7002ZM15.7002 15.0168V6.75H13.7002V15.0168H15.7002ZM14.7005 14.0168H14.7002V16.0168H14.7005V14.0168ZM13.7005 15.0168V23.2835H15.7005V15.0168H13.7005ZM13.7005 23.2835C13.7005 26.5972 16.3868 29.2835 19.7005 29.2835V27.2835C17.4914 27.2835 15.7005 25.4926 15.7005 23.2835H13.7005ZM19.7005 29.2835H58.6051V27.2835H19.7005V29.2835ZM58.6051 29.2835C61.9188 29.2835 64.605 26.5972 64.605 23.2835H62.605C62.605 25.4926 60.8142 27.2835 58.6051 27.2835V29.2835ZM64.605 23.2835V15.0167H62.605V23.2835H64.605ZM63.605 14.0167H63.6047V16.0167H63.605V14.0167ZM62.6047 6.75V15.0167H64.6047V6.75H62.6047ZM58.6047 2.75C60.8139 2.75 62.6047 4.54086 62.6047 6.75H64.6047C64.6047 3.43629 61.9184 0.75 58.6047 0.75V2.75ZM19.7002 2.75H58.6047V0.75H19.7002V2.75Z" fill="#2B353B"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4463 10.4854C9.68487 10.4854 7.44629 12.7239 7.44629 15.4854V23.0438H7.44654V30.6021C7.44654 33.3635 9.68512 35.6021 12.4465 35.6021H51.3511C54.1125 35.6021 56.3511 33.3635 56.3511 30.6021V23.0437H56.3508V15.4854C56.3508 12.7239 54.1122 10.4854 51.3508 10.4854H12.4463Z" />
+                            <path d="M7.44629 23.0438H6.44629V24.0438H7.44629V23.0438ZM7.44654 23.0438H8.44654V22.0438H7.44654V23.0438ZM56.3511 23.0437H57.3511V22.0437H56.3511V23.0437ZM56.3508 23.0437H55.3508V24.0437H56.3508V23.0437ZM8.44629 15.4854C8.44629 13.2762 10.2372 11.4854 12.4463 11.4854V9.48535C9.13258 9.48535 6.44629 12.1716 6.44629 15.4854H8.44629ZM8.44629 23.0438V15.4854H6.44629V23.0438H8.44629ZM7.44654 22.0438H7.44629V24.0438H7.44654V22.0438ZM6.44654 23.0438V30.6021H8.44654V23.0438H6.44654ZM6.44654 30.6021C6.44654 33.9158 9.13283 36.6021 12.4465 36.6021V34.6021C10.2374 34.6021 8.44654 32.8113 8.44654 30.6021H6.44654ZM12.4465 36.6021H51.3511V34.6021H12.4465V36.6021ZM51.3511 36.6021C54.6648 36.6021 57.3511 33.9158 57.3511 30.6021H55.3511C55.3511 32.8113 53.5602 34.6021 51.3511 34.6021V36.6021ZM57.3511 30.6021V23.0437H55.3511V30.6021H57.3511ZM56.3511 22.0437H56.3508V24.0437H56.3511V22.0437ZM55.3508 15.4854V23.0437H57.3508V15.4854H55.3508ZM51.3508 11.4854C53.5599 11.4854 55.3508 13.2762 55.3508 15.4854H57.3508C57.3508 12.1716 54.6645 9.48535 51.3508 9.48535V11.4854ZM12.4463 11.4854H51.3508V9.48535H12.4463V11.4854Z" fill="#2B353B"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5957 19.2202C3.83428 19.2202 1.5957 21.4588 1.5957 24.2202V31.7787H1.59589V39.337C1.59589 42.0984 3.83446 44.337 6.59589 44.337H45.5004C48.2618 44.337 50.5004 42.0984 50.5004 39.337V31.7786H50.5002V24.2202C50.5002 21.4588 48.2616 19.2202 45.5002 19.2202H6.5957Z" />
+                            <path d="M1.5957 31.7787H0.595703V32.7787H1.5957V31.7787ZM1.59589 31.7787H2.59589V30.7787H1.59589V31.7787ZM50.5004 31.7786H51.5004V30.7786H50.5004V31.7786ZM50.5002 31.7786H49.5002V32.7786H50.5002V31.7786ZM2.5957 24.2202C2.5957 22.0111 4.38656 20.2202 6.5957 20.2202V18.2202C3.28199 18.2202 0.595703 20.9065 0.595703 24.2202H2.5957ZM2.5957 31.7787V24.2202H0.595703V31.7787H2.5957ZM1.59589 30.7787H1.5957V32.7787H1.59589V30.7787ZM0.595885 31.7787V39.337H2.59589V31.7787H0.595885ZM0.595885 39.337C0.595885 42.6507 3.28218 45.337 6.59589 45.337V43.337C4.38675 43.337 2.59589 41.5462 2.59589 39.337H0.595885ZM6.59589 45.337H45.5004V43.337H6.59589V45.337ZM45.5004 45.337C48.8141 45.337 51.5004 42.6507 51.5004 39.337H49.5004C49.5004 41.5462 47.7095 43.337 45.5004 43.337V45.337ZM51.5004 39.337V31.7786H49.5004V39.337H51.5004ZM50.5004 30.7786H50.5002V32.7786H50.5004V30.7786ZM49.5002 24.2202V31.7786H51.5002V24.2202H49.5002ZM45.5002 20.2202C47.7094 20.2202 49.5002 22.0111 49.5002 24.2202H51.5002C51.5002 20.9065 48.8139 18.2202 45.5002 18.2202V20.2202ZM6.5957 20.2202H45.5002V18.2202H6.5957V20.2202Z" fill="#2B353B"/>
+                        </svg>      
+                    </div>
+                    <div class="card-view-blocks">
+                        <svg id="card-view-blocks" width="56" height="35" fill="#FFA72A"  viewBox="0 0 58 36"  xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_i_433_1653)">
+                            <path d="M0.638672 25.771C0.638672 23.0096 2.87725 20.771 5.63867 20.771H52.2139C54.9753 20.771 57.2139 23.0096 57.2139 25.771V34.4171C57.2139 34.9694 56.7662 35.4171 56.2139 35.4171H1.63867C1.08639 35.4171 0.638672 34.9694 0.638672 34.4171V25.771Z"/>
+                            <path d="M0.638672 9.646C0.638672 12.4074 2.87725 14.646 5.63867 14.646H52.2139C54.9753 14.646 57.2139 12.4074 57.2139 9.646V0.999855C57.2139 0.44757 56.7662 -0.000144958 56.2139 -0.000144958H1.63867C1.08639 -0.000144958 0.638672 0.447571 0.638672 0.999855V9.646Z"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_i_433_1653" x="0.638672" y="0" width="56.5752" height="35.417" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feMorphology radius="3" operator="erode" in="SourceAlpha" result="effect1_innerShadow_433_1653"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="2.5"/>
+                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.133333 0 0 0 0 0.172549 0 0 0 0 0.196078 0 0 0 0.5 0"/>
+                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_433_1653"/>
+                            </filter>
+                            </defs>
+                        </svg>     
+                    </div>
+                </div>
+                <div id="cards" class="cards blocks-cards">
+                    <div class="card card-about-page-first">
+                        <div class="card-image card-image-left card-image-second"></div>
+                        <div class="card-text">
+                            <div class="text-header">Работы</div>
+                            <div class="card-text-standart">
+                                Наша история - это сочетание энергии, энтузиазма, амбиций, адаптации к условиям, подхода к людям и командной работы. Мы используем свой опыт, чтобы предоставлять нашим клиентам высококачественные услуги.
+                            </div>
+                            <div class="card-text-standart">
+                                Благодаря богатому и глубокому опыту во всех аспектах строительства мы готовы взять на себя любую роль в Ваших проектах.
+                            </div>
+                            <div class="card-text-standart list-header">
+                                Основные услуги:  
+                            </div>
+                            <ul class="card-text-list ">
+                                <li>Строительный подряд</li>
+                                <li>Проектирование</li>
+                                <li>Снабжение и логистика Изготовление/производство</li>
+                                <li>ПНР</li>
+                            </ul>
+                            <div class="card-text-standart">
+                                Мы берем на себя роль(и) генерального / EPC-подрядчика (под-ключ) 
+                                или Субподрядчика, в различных сферах строительства, 
+                                таких как магистральные трубопроводы, газовые, в том числе СПГ, 
+                                нефтехимические и энергетические комплексы, горно-металлургические комбинаты 
+                                (ГОК и ГМК), цементная и обрабатывающая промышленность, 
+                                а так же в прочих связанных с этими сферами строительных проектах.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-about-page-second">
+                        <div class="card-image card-image-left card-image-fourth"></div>
+                        <div class="card-text">
+                            <div class="text-header">ОТ ПБ и ООС</div>
+                            <div class="card-text-standart">
+                                Наше видение ОТ ПБ и ООС
+                            </div>
+                            <div class="card-text-standart">
+                                Люди - наша главная ценность, и мы стремимся обеспечить им безопасные рабочие места без вреда для здоровья.
+                            </div>
+                            <div class="card-text-standart list-header">
+                                <b>В наших планах поучение сертификации:</b>
+                            </div>
+                            <ul class="card-text-list ">
+                                <li>ISO 45001:2018 Система менеджмента охраны здоровья и безопасности труда</li>
+                                <li>ISO 14001:2015 Система менеджмента охраны окружающей среды</li>
+                            </ul>
+                            <div class="card-text-standart list-header">
+                                <b>Наши годовые плановые цели ОТ ПБ и ООС по превентивным (проактивным) и ответным (реактивным) мерам следующие:
+                                </b>
+                            </div>
+                            <ul class="card-text-list ">
+                                <li>Частота происшествий с временной потерей трудоспособности= 0,04 (OSHA)</li>
+                                <li>Общая частота регистрируемых инцидентов = 0,4 (OSHA)</li>
+                                <li>Коэффициент обучения в классе и на рабочем месте = %0,55 <span>(Часов обучения/Всего часов)</span></li>
+                            </ul>
+                            <div class="card-text-standart">
+                                Годовые цели также включают наших субподрядчиков.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-about-page-third">
+                        <div class="card-text">
+                            <div class="text-header">Система контроля и гарантии качества</div>
+                            <div class="card-text-standart">
+                                Наша МИССИЯ - предоставлять высококачественные (QMS) услуги по проектированию, закупкам, строительству и управлению строительством для национальных и международных проектов.
+                            </div>
+                            <div class="card-text-standart">
+                                Мы стремимся к достижению наших целей, приданию ценности обществу и окружающей среде, повышению эффективности и обеспечению удовлетворенности клиентов путем создания, внедрения и поддержания эффективной системы менеджмента качества.
+                            </div>
+                            <div class="card-text-standart list-header">
+                                Общие принципы всеобщей системы контроля и гарантии качества (TQM):
+                            </div>
+                            <ul class="card-text-list">
+                                <li>Клиентоориентированность</li>
+                                <li>Общая вовлеченность сотрудников</li>
+                                <li>Ориентированность на процесс</li>
+                                <li>Интегрированная система</li>
+                                <li>Стратегический и систематический подход</li>
+                                <li>Непрерывное совершенствование</li>
+                                <li>Принятие решений на основе фактов</li>
+                                <li>Коммуникация</li>
+                            </ul>
+                            <div class="card-text-standart">
+                                Создавая все необходимое для «Системы контроля и гарантии качества» на всех наших проектах, мы улучшаем процессы, чтобы обеспечить высочайшее качество нашего бизнеса, и стремимся постоянно повышать качество в нашей компании.
+                            </div>
+                            <div class="card-text-standart">
+                                Мы достигаем лучшего уровня качества посредством:
+                            </div>
+                            <ul class="card-text-list regular-text">
+                                <li>Регулярного мониторинга и учета отзывов и жалоб клиентов.</li>
+                                <li>Менеджмента субподрядчиков - выбор и мониторинг эффективности поставщиков и субподрядчиков более низкого ровня.</li>
+                                <li>Обучения всего персонала, вовлеченного в наши проекты.</li>
+                                <li>Регулярного аудита наших внутренних процессов и мониторинга измеримых целей в области качества.</li>
+                            </ul>
+                            <div class="card-text-standart">
+                                В дополнение к целям, изложенным в политике компании, следующие общие цели приняты в качестве принципов;
+                            </div>
+                            <ul class="card-text-list regular-text">
+                                <li>Развитие корпоративной культуры для продвижения «всеобщей системы контроля и гарантии качества» при участии Руководителя Проекта. </li>
+                                <li>Планирование и реализация работ на основе принципа удовлетворенности клиентов.</li> 
+                                <li>Поставка материалов и продукции для проекта, проектирование и учет изменений, ход строительства проекта и другие услуги / поставки должны соответствовать требованиям к качеству проекта, а также всем применимым спецификациям и местному законодательству. </li>
+                                <li>Поддержка Системы контроля и гарантии качества во всех аспектах нашей работы и обеспечение постоянного совершенствования этой системы является наивысшим приоритетом.</li>
+                            </ul>
+                        </div>
+                        <div class="card-image card-image-right card-image-fifth"></div>
+                    </div>
+                    <div class="card card-about-page-fourth">
+                        <div class="card-image card-image-left card-image-sixth"></div>
+                        <div class="card-text">
+                            <div class="text-header">Операционная деятельность</div>
+                            <div class="card-text-standart">Команда менеджеров и руководителей INNOVA передает свой опыт, знания и ноу-хау, полученные в ходе реализации проектов, по всей Российской Федерации.
+                            </div><br>
+                            <div class="card-text-standart">Сильные стороны компании INNOVA;</div>
+                            <ul class="card-text-list ">
+                                <li>Соответствие Российским и Международным Стандартам</li>
+                                <li>Подготовка передаточной (исполнительной) документации </li>
+                                <li>Соблюдение Российского Законодательства и Российских Строительных Норм и Правил </li>
+                                <li>Уважение Культуры и Ценностей местности на которой осуществляется проект</li>
+                                <li>Максимальная экологическая ответственность</li>
+                                <li>Возможность быстрой мобилизации в любой точке обширной российской географии на основе нашего опыта от Ямала до Краснодара и от Владивостока до Санкт-Петербурга</li>
+                                <li>Работоспособность в условиях Арктического региона</li>
+                                <li>Полный спектр инженерных и материально-технических возможностей</li>
+                                <li>Адаптация и работа в условиях пандемии COVID-19 c соблюдением Российских и Международных протоколов без влияния на сроки производства работ и качество выполняемых работ.</li> 
+                            </ul>
+                            <div class="card-text-standart">Портфель субподрядных организаций:<br>
+                                У нас есть различные высокопроизводительные партнеры в разных сферах строительства. Мы используем наш портфель субподрядных организаций в соответствии с требованиями проекта.
+                            </div>
+                            <div class="card-text-standart">
+                                Наша управленческая команда работала с более чем 500 различными субподрядными организациями и имеет уникальный опыт привлечения и управления более чем 50 субподрядными организациями в рамках одного проекта.
+                            </div>
+                            <div class="images-in-text">
+                                <img class="images-in-text__img" src="/images/cards/page-2-small-images.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-about-page-fifth">
+                        <div class="card-text">
+                            <div class="text-header">Инженерия</div>
+                            <div class="card-text-standart"><b>Трубопроводы</b></div>
+                            <ul class="card-text-list">
+                                <li>3D Управление<span class="additional-list-item">3D проектирование</span><span class="additional-list-item">Расчет нагрузок и отчетность</span></li>
+                                <li>Желтая маркировка и проверка согласованности посредством AVEVA ENG</li>
+                                <li>Интеграция оборудования и рассмотрение РКД производителей </li>
+                                <li>Подготовка изометрических чертежей и привязка к объёму снабжения проекта для облегчения трубомонтажных работ</li>
+                                <li>Последовательность монтажа оборудования и отчетность</li>
+                            </ul>
+                            <div class="card-text-standart"><b>Металлоконструкции</b>​</div>
+                            <ul class="card-text-list ">
+                                <li>3D проектирование<span class="additional-list-item">Технические здания</span><span class="additional-list-item">Технологические здания</span></li>
+                                <li>Расчёты и отчетность (местные, транспортировка, грузоподъёмные..)</li>
+                                <li>Эстакады (Технологические и вспомогательные)</li>
+                            </ul>
+                            <div class="card-text-standart"><b>Электротехнические работы</b>​</div>
+                            <ul class="card-text-list ">
+                                <li>Схемы электрических соединений<span class="additional-list-item">Раскладка кабелей</span></li>
+                                <li>Раскладка и разводка кабельных лотков на 3D модели</li> 
+                                <li>Расчёты молниезащиты и 3D моделирование</li>
+                                <li>Рассмотрение РКД производителей и внедрение оборудования в 3D модель</li>
+                            </ul>
+                            <div class="card-text-standart"><b>КИПиА</b>​</div>
+                            <ul class="card-text-list ">
+                                <li>Прокладка и разводка кабелей для КИП и телекоммуникаций</li>
+                                <li>Рассмотрение РКД производителей и внедрение оборудования в 3D модель</li>
+                            </ul>
+                            <div class="card-text-standart"><b>Бетонные работы</b>​</div>
+                            <ul class="card-text-list ">
+                                <li>3D проектирование<span class="additional-list-item">Расчёты и отчетность</span></li>
+                                <li>Непроизводственные здания<span class="additional-list-item">Все детали</span></li>
+                                <li>Технические здания<span class="additional-list-item">Технологические здания</span></li>
+                            </ul>
+                            <div class="card-text-standart"><b>Предотвращение ущерба</b>​</div>
+                            <ul class="card-text-list">
+                                <li>Разработка 3D модели для;</li>			
+                                <li>Противопожарное оборудование<span class="additional-list-item">Датчики огня и дыма</span></li>
+                                <li> Защита от разлива<span class="additional-list-item">Огнезащита</span></li>	
+                                <li>Знаки безопасности<span class="additional-list-item">Пути эвакуации</span></li>
+                            </ul>
+                        </div>
+                        <div class="card-image card-image-right card-image-seventh"></div>
+                    </div>
+                    <div class="card card-about-page-sixth">
+                        <div class="card-image card-image-left card-image-eighth"></div>
+                        <div class="card-text">
+                            <div class="text-header">Снабжение и логистика</div>
+                            <ul class="card-text-list regular-text">
+                                <li>Портфолио из более чем 1.000+ поставщиков/производителей</li>
+                                <li>Закупки и логистические операции в более чем 10 странах мира</li>
+                                <li>Возможности и опыт работы с логистическими и таможенными партнерами</li>
+                                <li>Подбор и закупка оптимального варианта в соответствии с требованиями Проекта</li>
+                                <li>Прочные отношения с ключевыми поставщиками, производителями и поставщиками услуг</li>
+                                <li>Управление всей цепочкой поставок, от снабжения, закупок и транспортной логистики до инвентаризационного контроля, инспекций, входного контроля и обеспечения качества.</li>
+                            </ul>
+                            <div class="images-in-text">
+                                <img class="images-in-text__img" src="/images/cards/page-2-small-images-2.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-about-page-seventh">
+                        <div class="card-text">
+                            <div class="text-header">Изготовление и производство</div>
+                            <div class="card-text-standart list-header">
+                                Проектирование и эксплуатация одного из крупнейших цехов по изготовлению трубопроводов в России
+                            </div>
+                            <ul class="card-text-list ">
+                                <li>Ежемесячная производительность 100.000 + wdi (дюймо-диаметров)</li>
+                                <li>20.000 м2 сварочный цех</li>
+                                <li>10.000 м2 покрасочный цех</li>
+                                <li>10+ автоматических сварочных аппаратов</li>
+                            </ul>
+                            <div class="card-text-standart list-header">
+                                Проектирование и эксплуатация одного из крупнейших цехов по изготовлению модульных конструкций в России 
+                            </div>
+                            <ul class="card-text-list ">
+                                <li>25.000 тонн изготовления  и укрупненной сборки м/к в год</li>
+                                <li>75.000 м2 площадь покраски ежегодно</li>
+                                <li>30.000 м2 закрытой площади и 70.000 м2 складской площади</li>
+                            </ul>
+                            <div class="images-in-text">
+                                <img class="images-in-text__img" src="/images/cards/page-2-small-images-3.png">
+                            </div>
+                        </div>
+                        <div class="card-image card-image-right card-image-nineth"></div>
+                    </div>
+                    <div class="card card-about-page-eighth">
+                        <div class="card-image card-image-left card-image-tenth"></div>
+                        <div class="card-text">
+                            <div class="text-header">Подготовка</div>
+                            <div class="card-text-standart list-header">
+                                Проектирование и эксплуатация одного из крупнейших цехов по изготовлению трубопроводов в России
+                            </div><br>
+                            <div class="card-text-standart">
+                                Объем и требования: Получение четкого определения объема и фактических требований ПНР.
+                                Планирование: Организация группы ПНР, разработка коллективных мероприятий и программ обучения. Подготовка документов и контрольных ведомостей. Подготовка процедур ПНР и стандартных операционных процедур.
+                            </div>
+                            <div class="card-text-standart list-header">
+                                Реализация
+                            </div>
+                            <div class="card-text-standart">
+                                Проверка завершенности строительством и подготовка к ПНР: Очистка, инспекционная проверка, дефектные ведомости и подтверждение завершения строительства с завершением стадии подготовки к ПНР.
+                                Передача группе ПНР: передача завершенного строительством объёма группе ввода в эксплуатацию и рассмотрение объема работ.
+                                Испытания: сухие испытания, испытания на герметичность, ПНР на безопасных химических веществах (средах), обучение и предпусковые осмотры на безопасность.
+                                Пуск: ПНР на технологических химических веществах (средах) с представителями производителя, обучение операторов и обслуживающего персонала
+                                Проверка: Проверка установки и продукции на соответствие проектным и качественным параметрам: Технология, оборудование, продукция.
+                            </div>
+                            <div class="card-text-standart list-header">
+                                Передача клиенту
+                            </div>
+                            <div class="card-text-standart">
+                                Передача клиенту для ввода в эксплуатацию: Рассмотрение критериев приемки. Сдача Пуско-наладочной документации клиенту. Обучение персонала.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="grid">
+            <div class="footer-main-block">
+                <div class="footer-first-column">
+                    <div id="footer-logo">
+                        <a href="/ru/index.html">
+                            <img class="footer-logo" src="/images/logo.svg">
+                        </a>
+                    </div>
+                    <div class="footer-mail">info@innova-cons.com</div>
+                    <div class="footer-phone">+7 499 922 88 71</div>
+                    <div class="footer-social-icons">
+                        <div class="ig-icon contacts-icon">
+                            <a>
+                                <a href="https://www.instagram.com/innova_construction_group/">
+                                    <img src="/images/ig-icon.svg">
+                                </a>
+                            </a>
+                        </div>
+                        <div class="fb-icon contacts-icon">
+                            <a>
+                                <img src="/images/fb-icon.svg">
+                            </a>
+                        </div>
+                        <div class="tg-icon contacts-icon">
+                            <a>
+                                <img src="/images/tg-icon.svg">
+                            </a>
+                        </div>                       
+                        <div class="ln-icon contacts-icon">
+                            <a href="https://www.linkedin.com/company/innova-construction-group/">
+                                <img src="/images/ln-icon.svg">
+                            </a>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="footer-second-column">
+                    <div class="footer-column-header">
+                        <a href="/ru/about.html">
+                           про нас
+                        </a>
+                    </div>
+                    <div class="footer-column-text">
+                        <a href="/ru/activities.html">
+                            Что мы делаем
+                        </a>
+                    </div>
+                    <div class="footer-column-text">
+                        <a href="/ru/about.html">
+                            О компании
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-third-column">
+                    <div class="footer-column-header">
+                        <a href="/ru/petrochemical.html">
+                            Проекты
+                        </a>
+                    </div>
+                    <div class="footer-column-text">
+                        <a href="/ru/petrochemical.html">
+                            Нефтехимическая отрасль
+                        </a>
+                    </div>
+                    <div class="footer-column-text">
+                        <a href="/ru/mining.html">
+                            Горнодобывающая и<br class="footer-br"> металлургическая отрасли
+                        </a>
+                    </div>
+                    <div class="footer-column-text">
+                        <a href="/ru/gas.html">
+                            СПГ и газовая отрасль
+                        </a>
+                    </div>
+                </div>
+                                <div class="footer-fourth-column">
+                    <div class="footer-column-header">
+                        <a href="/ru/partners.html">
+                            Партнеры
+                        </a>
+                    </div>
+                    <div class="footer-column-text">
+                        <a href="/ru/partners.html#investors">
+                            Список клиентов (Инвесторов)
+                        </a>
+                    </div>
+                    <div class="footer-column-text">
+                        <a href="/ru/partners.html#epc">
+                            Список клиентов (Генподрядные организации)
+                        </a>
+                    </div><br><br>
+                    <div id="footer-contacts" class="footer-column-header">
+                        <a href="/ru/index.html#contacts-anchor">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-fifth-column">
+                    <a class="back-button-cover" href="#">
+                        <div class="back-arrow-text">Наверх</div>
+                        <img class="back-arrow" src="/images/footer-arrow.svg">
+                    </a>
+                    <div id="mobile-icons" class="footer-social-icons">
+                        <div class="ig-icon contacts-icon">
+                            <a>
+                                <a href="https://www.instagram.com/innova_construction_group/">
+                                            <img src="/images/ig-icon.svg">
+                                        </a>
+                            </a>
+                        </div>
+                        <div class="fb-icon contacts-icon">
+                            <a>
+                                <img src="/images/fb-icon.svg">
+                            </a>
+                        </div>
+                        <div class="tg-icon contacts-icon">
+                            <a>
+                                <img src="/images/tg-icon.svg">
+                            </a>
+                        </div>                       
+                        <div class="ln-icon contacts-icon">
+                            <a href="https://www.linkedin.com/company/innova-construction-group/">
+                                <img src="/images/ln-icon.svg">
+                            </a>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal-mark">© 2021, Innova Construction Group. all rights reserved.</div>
+        </div>  
+    </footer>
+</body>
+<script src="/js/index.js"></script>
+</html>

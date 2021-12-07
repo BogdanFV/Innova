@@ -141,7 +141,9 @@ header a{
   font-weight: 600;
   cursor: default;
 }
-.menu-about:hover{
+.footer-fourth-column {
+  margin-right: 0px;
+  margin-left: auto;
 }
 .menu-about:hover .expandable-about{
   display: flex;
@@ -394,7 +396,7 @@ button:hover{
   background-image: url(/images/cards/card-6.png);
 }
 .card-image-seventh{
-  background: url(/images/cards/card-7.png) no-repeat;
+  background-image: url(/images/cards/card-7.png);
 }
 .card-image-eighth{
   background-image: url(/images/cards/card-8.png);
@@ -416,7 +418,7 @@ button:hover{
 }
 .text-header{
   font-size: 36px;
-  line-height: 44px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -588,13 +590,10 @@ footer a:hover{
   margin-bottom: 10px;
 }
 .footer-second-column{
-  margin-left: 250px;
+  margin-left: 150px;
 }
 .footer-third-column{
-  margin-left: 130px;
-}
-.footer-fourth-column{
-  margin-left: 130px;
+  margin-left: 50px;
 }
 .about-page-header{
   margin: 26px 0 44px 20px;
@@ -904,7 +903,7 @@ footer a:hover{
     grid-row-gap: 65px;
   }
   .footer-second-column{
-    margin-left: 150px;
+    margin-left: 100px;
   }
   .footer-column-text{
     margin-bottom: 35px;
@@ -993,7 +992,7 @@ footer a:hover{
     margin-bottom: 25px;
   } 
   .footer-second-column {
-    margin-left: 120px;
+    margin-left: 60px;
     margin-top: 34px;
   }
   .footer-third-column {
@@ -1264,7 +1263,7 @@ footer a:hover{
     font-size: 18px;
   }
   .footer-second-column {
-    margin-left: 72px
+    margin-left: 32px
   }
   .partners-template:first-child {
     margin-bottom: 35px;
@@ -1367,7 +1366,9 @@ footer a:hover{
     line-height: 10px;
     font-size: 10px;
   }
- 
+  .footer-first-column .footer-social-icons{
+    display: none;
+  }
   .main-contacts .contacts-icon{
     width: 100%;
     height: 100%;
