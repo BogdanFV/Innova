@@ -453,7 +453,7 @@ main li:before{
   display: flex;
   flex-direction: row;
 
-  margin-top: 181px;
+  margin-top: 10px;
   margin-bottom: 107px;
 }
 .contacts-map{
@@ -770,11 +770,11 @@ footer a:hover{
 .footer-fifth-column{
   display: none;
 }
-.card-view-flex{
+.card-view-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 70px 0 20px;
 }
 .card-view-flex div{
   width: 62px;
@@ -1147,7 +1147,7 @@ footer a:hover{
     line-height: 44px;
   }
   .contacts{
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .contacts-text {
     margin-left: 20px;
@@ -1293,7 +1293,6 @@ footer a:hover{
   }
   .contacts{
     margin-bottom: 41px;
-    margin-top: 41px;
   }
   .footer-second-column{
     margin-top: 0;
@@ -1660,10 +1659,6 @@ footer a:hover{
   }
   .countries-header{
     line-height: 10px;
-  }
-  .card {
-    margin-left: 10px;
-    margin-right: 10px;
   }
   .about-page-header{
     font-size: 14px;

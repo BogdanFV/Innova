@@ -13,7 +13,6 @@ if(window.screen.width > 1024){
 } else if(window.screen.width < 768){
   paddingCard = 50;
 }
-console.log(window.screen.width);
 menuButton.addEventListener('click', () => {
   if(menu.classList.contains('hidden-menu')){
     menu.classList.remove('hidden-menu');
@@ -29,18 +28,17 @@ menuButton.addEventListener('click', () => {
 });
 
 function cardsRotation(){
-  
   if(cards.classList.contains('pile-cards')){
-    cards.firstElementChild.style = "z-index:"+ cards.children.length + ";" + " transform: rotate(0deg);" + " top:" + paddingCard *  cards.children.length + "px";
+    cards.firstElementChild.style = "z-index:"+ cards.children.length + ";" + " transform: rotate(0deg);" + " top:" + paddingCard * (cards.children.length - 1) + "px";
 
     for(let i = 1; i < cards.children.length; i++){
       if(i % 2 == 0){
-        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(1.5deg);" + " top:" + paddingCard * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
+        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(1.5deg);" + " top:" + paddingCard * (cards.children.length - 1 - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
       } else{
-        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(-1.5deg);" + " top:" + paddingCard * (cards.children.length - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
+        cards.children[i].style = "z-index:"+ (cards.children.length - i) + ";" + " transform: rotate(-1.5deg);" + " top:" + paddingCard * (cards.children.length - 1 - i) + "px; " + "height: " + cards.firstElementChild.offsetHeight + "px;";
       }
     }
-    cards.style.height = cards.firstElementChild.offsetHeight + ((cards.children.length + 1) * paddingCard) + "px" ;
+    cards.style.height = cards.firstElementChild.offsetHeight + (cards.children.length  * paddingCard) + "px" ;
   }
 }
 function straightCards(){
